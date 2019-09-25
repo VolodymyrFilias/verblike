@@ -1,0 +1,475 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background: url(../img/white.png) ;
+    margin: 0;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Roboto', sans-serif;
+}
+.block_menu {
+    display: flex;
+    background: #2A2A2A;
+    width: 25vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu_list {
+    color: #ECECEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    list-style-type: none;
+  }
+  .menu_list li {
+    display: flex;
+    align-items: center;
+  } 
+
+a {
+  text-decoration: none;
+  color: #ECECEC;
+  vertical-align: middle;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+}
+.registration_form {
+    min-height: 600px;
+    height: 90vh;
+    width: 55vw;
+    background: #2E2E2E;
+    padding: 30px;
+  }
+  .registration_field {
+    color: #2E2E2E;
+    box-shadow: 10px 5px 5px  #2A2A2A;
+    margin: 10px;
+    /* padding: 10px 40px 0px 40px; */
+  }
+  .form-inner input,
+  .form-inner textarea {
+    display: block;
+    width: 100%;
+
+    margin-bottom: 10px;
+    background:  #2E2E2E;
+    line-height: 40px;
+    border-width: 0;
+  }
+  .form-inner textarea {
+    resize: none;
+  }
+  .form-inner h3 {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+  }
+  h5 {
+      font-size: 15px;
+      text-align: center;
+      color: #B0B0B0;
+  }
+  h3 {
+      font-size: 20px;
+      text-align: center;
+      color: #FFFFFF;
+  }
+  .form-inner input,
+  .form-inner textarea {
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-style: normal;
+    color: rgba(255,255,255, 0.5);
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255, 0.2);
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .information {
+    display: flex;
+    justify-content: space-around;
+    padding: 5vh 40px 5px 40px
+  }
+  .information_text {
+      display: flex;
+      justify-content: space-evenly;
+      right: 200px;
+  }
+#bord {
+    margin-bottom: 10vh;
+}
+
+#confirm_button{
+    position: relative;
+    left: 25%;
+    bottom: -20px;
+    width: 50%;
+    margin: 5vh 0;
+    background: #FFFFFF;
+    color: #2E2E2E;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+
+  
+  .elements {
+    color: #ECECEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+    list-style-type: none;
+  }
+  .elements li {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  } 
+
+.logo3 {
+    width: 100%;
+    text-align: end;
+}
+.logo3 img{
+  margin: 3%;
+  width: 14%;
+}
+.links{
+  display: flex;
+  height: 35vh;
+  flex-direction: column;
+}
+.links .fa {
+cursor: pointer;
+}
+.fa {
+  font-size: 35px;
+  text-align: end;
+  color: #ECECEC;
+  margin: 25px;
+}
+
+nav {
+  display: flex;
+  margin: 0 auto 30px;
+  justify-content: center;
+  
+}
+article{
+  width: 100vw;
+}
+
+
+.nav {
+  /*  ширна произвольная, не стесняйтесь экспериментировать */
+  width: 400px;
+  min-width: 320px;
+  /* фиксируем и выставляем высоту панели на максимум */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  /* сдвигаем (прячем) панель относительно левого края страницы */
+  left: -320px;
+  /* внутренние отступы */
+  padding: 15px 0px;
+  /* плавный переход смещения панели */
+  -webkit-transition: left 0.3s;
+  -moz-transition: left 0.3s;
+  transition: left 0.3s;
+  /* определяем цвет фона панели */
+  background: #2A2A2A;
+  /* поверх других элементов */
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/**
+* Кнопка переключения панели
+* тег <label>
+*/
+
+.nav-toggle {
+  /* абсолютно позиционируем */
+  position: absolute;
+  /* относительно левого края панели */
+  left: 330px;
+  /* отступ от верхнего края панели */
+  top: 50%;
+  /* внутренние отступы */
+  padding: 0.5em;
+  /* определяем цвет фона переключателя
+   * чаще вчего в соответствии с цветом фона панели
+  */
+  background: inherit;
+  /* цвет текста */
+  color: #dadada;
+  /* вид курсора */
+  cursor: pointer;
+  /* размер шрифта */
+  font-size: 1.8em;
+  font-weight: 800;
+  line-height: 1;
+  /* всегда поверх других элементов страницы */
+  z-index: 2001;
+  /* анимируем цвет текста при наведении */
+  -webkit-transition: color .25s ease-in-out;
+  -moz-transition: color .25s ease-in-out;
+  transition: color .25s ease-in-out;
+}
+
+/* определяем текст кнопки 
+* символ Unicode (TRIGRAM FOR HEAVEN)
+*/
+
+.nav-toggle:after {
+  content: '\2630';
+  text-decoration: none;
+}
+
+/* цвет текста при наведении */
+
+.nav-toggle:hover {
+  color: #f4f4f4;
+}
+
+/**
+* Скрытый чекбокс (флажок)
+* невидим и недоступен :)
+* имя селектора атрибут флажка
+*/
+
+[id='nav-toggle'] {
+  position: absolute;
+  display: none;
+}
+
+/**
+* изменение положения переключателя 
+* при просмотре на мобильных устройствах
+* когда навигация раскрыта, распологаем внутри панели
+*/
+
+[id='nav-toggle']:checked ~ .nav > .nav-toggle {
+  left: auto;
+  right: 2px;
+  top: 50%;
+}
+
+/**
+* Когда флажок установлен, открывается панель
+* используем псевдокласс:checked
+*/
+
+[id='nav-toggle']:checked ~ .nav {
+  left: 0;
+  box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -moz-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+  -webkit-box-shadow:4px 0px 20px 0px rgba(0,0,0, 0.5);
+  overflow-y: auto;
+}
+
+/* 
+* смещение контента страницы
+* на размер ширины панели,
+* фишка необязательная, на любителя
+*/
+
+[id='nav-toggle']:checked ~ main > article {
+  -webkit-transform: translateX(400px);
+  -moz-transform: translateX(400px);
+  transform: translateX(400px);
+  width: calc(100vw - 400px);
+}
+[id='nav-toggle']:checked ~ .nav > .logo3 > img {
+  margin: 10%;
+  width: 20%;
+}
+[id='nav-toggle']:checked ~ .nav > .logo3  {
+ text-align: center
+}
+[id='nav-toggle']:checked ~ .nav > .links  {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  flex-direction: row;
+}
+[id='nav-toggle']:checked ~ .nav > .links > .fa  {
+  font-size: 35px;
+  color: #ECECEC;
+  text-align: center;
+  margin: 0 5%;
+}
+/*
+* изменение символа переключателя,
+* привычный крестик (MULTIPLICATION X), 
+* вы можете испльзовать любой другой значок
+*/
+
+/* [id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
+  content: '\2715';
+} */
+
+/**
+* профиксим баг в Android <= 4.1.2
+* см: http://timpietrusky.com/advanced-checkbox-hack
+*/
+
+body {
+  -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+  to {
+    padding: 0;
+  }
+}
+
+/**
+* позаботьтимся о средних и маленьких экранах
+* мобильных устройств
+*/
+
+@media screen and (min-width: 320px) {
+  html,
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html,
+  body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .nav {
+    width: 100%;
+    box-shadow: none
+  }
+}
+
+
+
+.nav h2 a {
+  color: #dadada;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+
+/**
+* формируем непосредственно само меню
+* используем неупорядоченный список для пунктов меню
+* прикрутим трансфомации и плавные переходы
+*/
+
+
+.nav > ul > li {
+  line-height: 2.5;
+  opacity: 0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+  -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+  -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+  transition: opacity .5s .1s, transform .5s .1s;
+}
+
+[id='nav-toggle']:checked ~ .nav > ul > li {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* определяем интервалы появления пунктов меню */
+
+.nav > ul > li:nth-child(2) {
+  -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
+  transition: opacity .5s .2s, transform .5s .2s;
+}
+
+.nav > ul > li:nth-child(3) {
+  -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+  transition: opacity .5s .3s, transform .5s .3s;
+}
+
+.nav > ul > li:nth-child(4) {
+  -webkit-transition: opacity .5s .4s, -webkit-transform .5s .4s;
+  transition: opacity .5s .4s, transform .5s .4s;
+}
+
+.nav > ul > li:nth-child(5) {
+  -webkit-transition: opacity .5s .5s, -webkit-transform .5s .5s;
+  transition: opacity .5s .5s, transform .5s .5s;
+}
+
+.nav > ul > li:nth-child(6) {
+  -webkit-transition: opacity .5s .6s, -webkit-transform .5s .6s;
+  transition: opacity .5s .6s, transform .5s .6s;
+}
+
+.nav > ul > li:nth-child(7) {
+  -webkit-transition: opacity .5s .7s, -webkit-transform .5s .7s;
+  transition: opacity .5s .7s, transform .5s .7s;
+}
+
+
+/**
+* оформление ссылок пунктов меню
+*/
+
+.nav > ul > li > a {
+  padding: 5px 10px;
+  display: inline-block;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #dadada;
+  width: 100%;
+  text-decoration: none;
+  /* плавный переход */
+  -webkit-transition: color .5s ease, padding .5s ease;
+  -moz-transition: color .5s ease, padding .5s ease;
+  transition: color .5s ease, padding .5s ease;
+}
+
+/**
+* состояние ссылок меню при наведении
+*/
+
+.nav > ul > li > a:hover,
+.nav > ul > li > a:focus {
+  color: white;
+  padding-left: 15px;
+}

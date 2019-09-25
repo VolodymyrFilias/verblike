@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="46.571" viewBox="0 0 43 46.571">
+  <defs>
+    <filter id="book_2" x="0" y="0" width="43" height="46.571" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#book_2)">
+    <path id="book_2-2" data-name="book_2" d="M21.429,0H3.572A3.582,3.582,0,0,0,0,3.571V23.214a5.373,5.373,0,0,0,5.357,5.357H21.429A3.582,3.582,0,0,0,25,25V3.571A3.582,3.582,0,0,0,21.429,0Zm0,25H5.357a1.786,1.786,0,0,1,0-3.571H21.429Zm0-7.143H5.357a4.949,4.949,0,0,0-1.786.321V3.571H12.5V12.5l3.572-1.786L19.643,12.5V3.571h1.786Z" transform="translate(9 6)" fill="#fff"/>
+  </g>
+</svg>
